@@ -148,6 +148,25 @@ body {
   font-family: "Gordita", sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+button,
+select,
+textarea,
+input {
+  font-family: inherit;
+  color: inherit;
+}
+
 .col, .row > *, .container-fluid, .container {
   padding-left: calc(var(--grid-gutter-x) * 0.5);
   padding-right: calc(var(--grid-gutter-x) * 0.5);
@@ -1338,7 +1357,7 @@ body {
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
+    max-width: 1370px;
   }
 }
 .row-cols-xxl-i > * {
@@ -1567,6 +1586,88 @@ body {
 .g-xxl-5,
 .gy-xxl-5 {
   --grid-gutter-y: 90px;
+}
+
+.header {
+  background-color: #eee;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.navbar {
+  margin-left: 144px;
+}
+.navbar__list {
+  display: flex;
+  gap: 30px;
+}
+.navbar__link {
+  display: flex;
+  gap: 6px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.467; /* 146.667% */
+}
+.navbar__link .icon {
+  margin-top: 3px;
+}
+
+.top-act {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top-act__group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  padding: 13px 20px;
+}
+.top-act__group--single {
+  padding: 13px;
+}
+.top-act__btn {
+  display: flex;
+  align-items: center;
+}
+.top-act__label {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.467; /* 146.667% */
+}
+.top-act__separate {
+  width: 1px;
+  height: 30px;
+  background-color: #ededf6;
+}
+.top-act__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  object-fit: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo__brand {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.455; /* 145.455% */
 }
 
 /*# sourceMappingURL=main.css.map */
